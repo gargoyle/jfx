@@ -279,7 +279,6 @@ static jfieldID  jPixelsScaleYField = 0;
                 if ((scalex > 1) && (scaley > 1) && (width > 1) && (height > 1)) {
                     NSSize imgSize = {width / scalex, height / scaley};
                     [image setSize: imgSize];
-                    [imgSize release];
                 }
             }
             [self->item setImage: image];
